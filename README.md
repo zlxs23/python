@@ -7,14 +7,20 @@ MacOS CR \r
 2014/08/20 补充：如果你文件编码是UTF8并且包含中文文字，那还是把autocrlf设置为false，并且把所有文件转换为Linux编码（即LF\n），开启safecrlf检查
 
 ----------
-
+### 5/10/2016 6:05:10 PM  ###
 - AutoCRLF
 *提交时转换为LF，检出时转换为CRLF*
     git config --global core.autocrlf true
 *提交时转换为LF，检出时不转换*
     git config --global core.autocrlf input
+
+----------
+
 **提交检出均不转换**
     **git config --global core.autocrlf false** ***<Warning's Keyword!>***
+
+----------
+
 - SaFeCRLF
 *拒绝提交包含混合换行符的文件*
     git config --global core.safecrlf true
