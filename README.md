@@ -28,3 +28,11 @@ MacOS CR \r
     git config --global core.safecrlf false
 *提交包含混合换行符的文件时给出警告*
     git config --global core.safecrlf warn
+### 5/22/2016 12:01:23 AM  ###
+昨天电磁波谱没做,连着解决了电脑py2与py3的冲突--virtualenv
+- 重新安装 py
+- 借用[blog.csdn.net/ybdesire/article/details/50486777](blog.csdn.net/ybdesire/article/details/50486777 "virtualenv安装使用")
+- 用py27 安装 virtualenv 
+- 解决了jupyter notebook中py2与py3共同使用[http://stackoverflow.com/questions/30492623/using-both-python-2-x-and-python-3-x-in-ipython-notebook](http://stackoverflow.com/questions/30492623/using-both-python-2-x-and-python-3-x-in-ipython-notebook "jupyter notebook冲突解决")
+
+----------
