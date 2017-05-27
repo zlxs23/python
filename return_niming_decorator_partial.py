@@ -87,3 +87,9 @@ max2(5,6,8)
 #当传入以上函数时，相当于输入以下操作
 #args = (10,5,6,8) 自动将10作为*args参数的一部分添加到左边
 #max(*args)
+
+# 2016年10月5日17:13:35
+# 以下是我初次安装成功 YouCompleteMe 的使用情况 不会用
+from os import path
+
+print 'a'

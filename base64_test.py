@@ -33,3 +33,8 @@ def re_eq_base64_decode(s):
     if re_eq_length == 2:
         s += '=='
         return base64.b64decode(s)
+
+if __name__ == '__main__':
+    s = '11111'
+    x = re_eq_base64_decode(s)
+    print(x)

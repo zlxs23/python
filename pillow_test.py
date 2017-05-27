@@ -1,19 +1,19 @@
 from PIL import Image
-# open a jpg image file cd
-im = Image.open('test.jpg')
-# collect image size
-w, h = im.size
-print('Original image size: %s %s ' % (w, h))
-# 缩放到50%
-im.thumbnail((w//2, h//2))
-print('Resize image to: %s %s' % (w//2, h//2))
-# 将缩放后の图像有个jpeg保存起来
-im.save('thumbnail.jpg', 'jpeg')
+# # open a jpg image file cd
+# im = Image.open('test.jpg')
+# # collect image size
+# w, h = im.size
+# print('Original image size: %s %s ' % (w, h))
+# # 缩放到50%
+# im.thumbnail((w//2, h//2))
+# print('Resize image to: %s %s' % (w//2, h//2))
+# # 将缩放后の图像有个jpeg保存起来
+# im.save('thumbnail.jpg', 'jpeg')
 
-from PIL import ImageFilter  # 滤波 滤光
-# 将之模糊化
-im2 = im.filter(ImageFilter.BLUR)
-im2.save('bulr.jpg', 'jpeg')
+# from PIL import ImageFilter  # 滤波 滤光
+# # 将之模糊化
+# im2 = im.filter(ImageFilter.BLUR)
+# im2.save('bulr.jpg', 'jpeg')
 
 # 生成字母验证码图片
 
@@ -53,4 +53,5 @@ for t in range(4):
     draw.text((60 * t + 10, 10), letter, font=font, fill=rndColor2())
 # 模糊
 image = image.filter(ImageFilter.BLUR)
-image.save('code.jpg', 'jpeg')
+image.save('F:\\Browser_Downloads\\实验室 设备\\login_front\\checkCode\\code4.jpg', 'jpeg')
+# F:\\Browser_Downloads\\实验室 设备\\login_front\\checkCode\\code1.jpg
